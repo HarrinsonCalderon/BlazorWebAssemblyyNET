@@ -1,0 +1,24 @@
+﻿@page "/"
+//para tomar toda la configuracion del proyecto
+@inject IConfiguration config
+
+<PageTitle>Index</PageTitle>
+<ModuleTitle Title="@HelloMessage"></ModuleTitle>
+<h1>Hello, world platzi 2!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+ 
+
+@code{
+    public string HelloMessage { get; set; } = "";
+
+   
+
+    protected override void OnInitialized()
+    {
+        //config tiene la configuracion del proyecto, entonces podemos tomar la coniguracion de appsettings.json
+        HelloMessage = config["HelloMessage"];
+    }
+}
