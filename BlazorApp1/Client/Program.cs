@@ -1,6 +1,8 @@
 using BlazorApp1;
+using BlazorApp1.Services;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace BlazorApp1
 {
@@ -17,6 +19,11 @@ namespace BlazorApp1
 
             //builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(apiUrl) });
+
+            //Para inyectar los componentes
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<ICaregoryService, CategoryService>();
+
 
             await builder.Build().RunAsync();
         }
