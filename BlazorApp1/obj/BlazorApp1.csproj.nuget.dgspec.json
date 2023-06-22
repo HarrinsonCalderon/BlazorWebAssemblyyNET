@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HAR.CALDERON\\Desktop\\Platzi\\Blazor\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj": {}
+    "C:\\Users\\HAR.CALDERON\\Desktop\\Otros\\Platzi\\Blazor\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HAR.CALDERON\\Desktop\\Platzi\\Blazor\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj": {
+    "C:\\Users\\HAR.CALDERON\\Desktop\\Otros\\Platzi\\Blazor\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HAR.CALDERON\\Desktop\\Platzi\\Blazor\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
+        "projectUniqueName": "C:\\Users\\HAR.CALDERON\\Desktop\\Otros\\Platzi\\Blazor\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
         "projectName": "BlazorApp1",
-        "projectPath": "C:\\Users\\HAR.CALDERON\\Desktop\\Platzi\\Blazor\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
+        "projectPath": "C:\\Users\\HAR.CALDERON\\Desktop\\Otros\\Platzi\\Blazor\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
         "packagesPath": "C:\\Users\\HAR.CALDERON\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HAR.CALDERON\\Desktop\\Platzi\\Blazor\\BlazorApp1\\BlazorApp1\\obj\\",
+        "outputPath": "C:\\Users\\HAR.CALDERON\\Desktop\\Otros\\Platzi\\Blazor\\BlazorApp1\\BlazorApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HAR.CALDERON\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Blazored.Toast": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[6.0.15, )"
